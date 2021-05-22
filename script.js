@@ -6,6 +6,8 @@ time = setInterval(() => {
     document.getElementById('time').innerHTML = time
 }, 1000);
 
+document.getElementById('btn').addEventListener('click', btnFunc);
+
 function btnFunc(){
     clearInterval(time);
     let str = "Bhai/behen tera bahut bura time chal rha hai. Waise to poori duniya ka bura time chal rha hai par tera kuchh alag hi mamla hai. Apna khayaal rakhna!"
