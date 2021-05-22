@@ -9,17 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <style>
-        .head{
-            width: 231px;
-            margin: auto;
-            font-size: 80px;
+        body{
             background-color: #e9ecef;
         }
+
         .main{
             font-family: 'Lobster', cursive;
-            background-color: #e9ecef;
-            padding: 160px 0;
+            width: 80vw;
+            margin: auto;
+            text-align: center;
         }
+        
+        .head{
+            font-size: 3rem;
+        }
+
         .btn{
             font-family: 'Lobster', cursive;
             padding: 10px;
@@ -28,12 +32,17 @@
             color: white;
             font-size: 20px;
             border-radius: 8px;
+            border: none;
+        }
+
+        .btn:hover{
+            background-color: #053c8d;
         }
     </style>
 </head>
 <body>
     <div class="main">
-        <h1 class="head"><span id="time"></span><br><span id="txt"></span><button onclick="btnFunc()" class="btn" id="btn">Know about your time. Which time is going on is it bad or good.</button></h1>
+        <h1 class="head"><span id="time"></span><br><span id="txt"></span><button class="btn" id="btn">Know about your time. Which time is going on is it bad or good.</button></h1>
     </div>
     <script src="script.js"></script>
 </body>
