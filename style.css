@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#clockContainer{
+    position: relative;
+    background-color: red;
+    margin: auto;
+    height: 40vw;
+    width: 40vw;
+    background: url(clock.png) no-repeat;
+    background-size: 100%;
+}
+
+#hour, #minute, #second{
+    position: absolute;
+    background-color: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour{
+    width: 2.3%;
+    height: 28%;
+    top: 22%;
+    left: 48.7%;
+    opacity: 0.8;
+}
+
+#minute{
+    width: 2%;
+    height: 33%;
+    top: 17.3%;
+    left: 48.8%;
+    opacity: 0.8;
+}
+
+#second{
+    width: 0.6%;
+    height: 37%;
+    top: 13%;
+    left: 49.5%;
+    opacity: 0.8;
+}
+
+#btn-left{
+    border: 3px solid #0d6efd;
+    border-right: 1.5px;
+    padding: 2px 3px;
+    color: white;
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-family: 'Lobster', cursive;
+    outline: none;
+    font-size: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+#btn-right{
+    border: 3px solid #0d6efd;
+    border-left: 1.5px;
+    padding: 2px 3px;
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-family: 'Lobster', cursive;
+    outline: none;
+    font-size: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+#txt{
+    font-size: 17px;
+    font-family: 'Lobster', cursive;
+}
+
+@media screen and (max-width:600px) {
+    #clockContainer{
+        height: 60vw;
+        width: 60vw;
+    }
+    #btn-right, #btn-left{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #clockContainer{
+        height: 80vw;
+        width: 80vw;
+    }
+    #btn-right, #btn-left{
+        font-size: 27px;
+    }
+}
