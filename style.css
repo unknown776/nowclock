@@ -1,9 +1,11 @@
-*{
+*
+{
     margin: 0;
     padding: 0;
 }
 
-#clockContainer{
+#clockContainer
+{
     position: relative;
     background-color: red;
     margin: auto;
@@ -13,14 +15,16 @@
     background-size: 100%;
 }
 
-#hour, #minute, #second{
+#hour, #minute, #second
+{
     position: absolute;
     background-color: black;
     border-radius: 10px;
     transform-origin: bottom;
 }
 
-#hour{
+#hour
+{
     width: 2.3%;
     height: 28%;
     top: 22%;
@@ -28,7 +32,8 @@
     opacity: 0.8;
 }
 
-#minute{
+#minute
+{
     width: 2%;
     height: 33%;
     top: 17.3%;
@@ -36,7 +41,8 @@
     opacity: 0.8;
 }
 
-#second{
+#second
+{
     width: 0.6%;
     height: 37%;
     top: 13%;
